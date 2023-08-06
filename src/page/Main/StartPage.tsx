@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 
-// Components
+// TopContainer
 import TopContainer from '../../components/Wrapper/TopContainer';
+
+// Logo
 import LogoBox from '../../components/atoms/Box/LogoBox';
 
 const StartPage = () => {
