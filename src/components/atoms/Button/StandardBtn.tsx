@@ -35,3 +35,5 @@ const StandardBtn = ({ background, color, children, onClick }: BtnProps) => {
 };
 
 export default StandardBtn;
+
+// function -> util
