@@ -9,6 +9,9 @@ import StartPage from './Main/StartPage';
 import MainPage from './Main/MainPage';
 import BookSearch from './Main/BookSearch';
 
+// Profile
+import UserPropfile from './Profile/UserPropfile';
+
 const Router = () => {
   return (
     <>
@@ -18,6 +21,7 @@ const Router = () => {
         <Route path="/logincomplete" element={<LoginComplete />} />
         <Route path="/main" element={<MainPage />} />
         <Route path="/search" element={<BookSearch />} />
+        <Route path="/profile" element={<UserPropfile />} />
       </Routes>
     </>
   );

@@ -13,8 +13,8 @@ const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-const LibraryTitleBox = ({ text }: TitleProps) => {
+const TitleBox = ({ text }: TitleProps) => {
   return <Title>{text}</Title>;
 };
 
-export default LibraryTitleBox;
+export default TitleBox;
