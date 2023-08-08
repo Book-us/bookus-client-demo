@@ -10,6 +10,7 @@ const Title = styled.div`
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 20px;
 `;
 
 const LibraryTitleBox = ({ text }: TitleProps) => {

@@ -1,5 +1,8 @@
 import { styled } from 'styled-components';
 
+// Hook
+import { useNavigate } from 'react-router-dom';
+
 // TopContainer
 import TopContainer from '../../components/Wrapper/TopContainer';
 
@@ -9,6 +12,7 @@ import MainLogo from '../../assets/MainLogo.svg';
 
 // Library
 import LibraryTitleBox from '../../components/atoms/Box/LibraryTitleBox';
+import LibraryUl from '../../components/atoms/List/LibraryUl';
 
 // Icons
 import { AiOutlinePlusCircle } from 'react-icons/ai';
@@ -21,6 +25,15 @@ const LibraryWrapper = styled.div`
   height: 620px;
   margin: 40px 0 30px 0;
   display: flex;
+  flex-direction: column;
+`;
+
+const LibraryTitleWrapper = styled.div`
+  width: 100%;
+  height: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 `;
 
 const FooterWraaper = styled.footer`
@@ -32,14 +45,18 @@ const FooterWraaper = styled.footer`
 `;
 
 const MainPage = () => {
+  const navigate = useNavigate();
   return (
     <TopContainer padding="40px">
       <LogoBox src={MainLogo} width="150px" height="40px"></LogoBox>
       <LibraryWrapper>
-        <LibraryTitleBox text="My Library" />
+        <LibraryTitleWrapper>
+          <LibraryTitleBox text="My Library" />
+        </LibraryTitleWrapper>
+        <LibraryUl>서재 기능 할 공간</LibraryUl>
       </LibraryWrapper>
       <FooterWraaper>
-        <IconContainer>
+        <IconContainer onClick={() => navigate('/search')}>
           <AiOutlinePlusCircle style={{ width: '100%', height: '100%' }} />
         </IconContainer>
         <IconContainer>
