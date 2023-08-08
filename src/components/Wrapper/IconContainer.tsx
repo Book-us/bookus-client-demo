@@ -6,8 +6,7 @@ interface IconProps {
 }
 
 const Box = styled.div`
-  width: 30px;
-  height: 30px;
+  width: 25px;
 `;
 
 const IconContainer = ({ children }: IconProps) => {
