@@ -11,8 +11,10 @@ const Container = styled.div<ContainerProps>`
   height: 812px;
   background: #fafafa;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   padding: ${(props) => props.padding || '0'};
 `;
 
