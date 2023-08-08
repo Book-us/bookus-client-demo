@@ -9,7 +9,7 @@ interface BtnProps {
 }
 
 const Btn = styled.button<BtnProps>`
-  width: 100%;
+  width: 183px;
   height: 45px;
   padding: 14px 0px;
   box-sizing: border-box;
@@ -35,5 +35,3 @@ const StandardBtn = ({ background, color, children, onClick }: BtnProps) => {
 };
 
 export default StandardBtn;
-
-// function -> util
