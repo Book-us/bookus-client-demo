@@ -26,7 +26,7 @@ const LibraryTitleWrapper = styled.div`
 const MainPage = () => {
   return (
     <TopContainer padding="40px">
-      <LogoBox src={MainLogo} width="150px" height="40px" />
+      <LogoBox top="25px" src={MainLogo} width="150px" height="40px" />
       <MainContentWrapper width="300px" height="620px">
         <LibraryTitleWrapper>
           <TitleBox text="My Library" />
