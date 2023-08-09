@@ -11,6 +11,7 @@ import MainLogo from '../../assets/MainLogo.svg';
 // Profile
 import TitleBox from '../../components/atoms/Box/TitleBox';
 import FooterBar from '../../components/atoms/Footer/FooterBar';
+import StandardBtn from '../../components/atoms/Button/StandardBtn';
 
 const ProfileTitleWrapper = styled.div`
   width: 100%;
@@ -23,6 +24,18 @@ const ProfileMain = styled.div`
   height: 500px;
   border-top: 1px solid #050505;
   border-bottom: 1px solid #050505;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+const ProfileNameBox = styled.div`
+  width: 40%;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
 `;
 
 const UserPropfile = () => {
@@ -33,7 +46,12 @@ const UserPropfile = () => {
         <ProfileTitleWrapper>
           <TitleBox text="My Profile" />
         </ProfileTitleWrapper>
-        <ProfileMain></ProfileMain>
+        <ProfileMain>
+          <ProfileNameBox>건용님 환영합니다</ProfileNameBox>
+          <StandardBtn color="#FFFFFF" background="#000000">
+            로그아웃
+          </StandardBtn>
+        </ProfileMain>
         <FooterBar />
       </MainContentWrapper>
     </TopContainer>
