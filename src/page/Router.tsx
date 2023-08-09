@@ -7,7 +7,7 @@ import LoginComplete from './Login/LoginComplete';
 // MVP
 import StartPage from './Main/StartPage';
 import MainPage from './Main/MainPage';
-import BookSearch from './Main/BookSearch';
+import BookSearch from './Book/BookSearch';
 
 // Profile
 import UserPropfile from './Profile/UserPropfile';
