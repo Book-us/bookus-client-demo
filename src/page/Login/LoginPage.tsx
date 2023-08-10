@@ -15,7 +15,7 @@ const MainContainer = styled.div`
   width: 283px;
   height: 360px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
 `;
@@ -39,7 +39,7 @@ const LoginPage = () => {
   return (
     <TopContainer>
       <MainContainer>
-        <LogoBox src={MainLogo} width="283px" height="61px"></LogoBox>
+        <LogoBox top="240px" src={MainLogo} width="283px" height="61px"></LogoBox>
         <ButtonContainer>
           <StandardBtn color="#351C1B" background="#FBE54D">
             <KaKaoLogo src={Logo} alt="logo" /> 카카오로 로그인
